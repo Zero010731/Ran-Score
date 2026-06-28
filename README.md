@@ -114,7 +114,7 @@ python scripts/train_hf_audit_classifier.py   --model-name-or-path /path/to/mode
 
 Raw MIMIC-CXR reports/images and local hospital reports are not redistributed here. Publicly shareable derived annotations and metadata should be downloaded from the accompanying data release, subject to the dataset licenses and data-use agreements described in `docs/data_release.md`.
 
-The archival DOI for this repository and the accompanying shareable data release should be added after the final Zenodo record is available.
+An archival DOI for this repository and the accompanying shareable data release should be added after the final Zenodo record is available.
 
 ## Citation
 
