@@ -1,0 +1,50 @@
+### model
+model_name_or_path: ${QWEN35_MODEL_PATH}
+trust_remote_code: true
+quantization_bit: 4
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target: all
+
+### dataset
+dataset_dir: data/llamafactory_ranaudit
+dataset: ranaudit_sft_train
+eval_dataset: ranaudit_sft_val
+template: qwen
+cutoff_len: 1024
+max_samples: 100000
+overwrite_cache: true
+preprocessing_num_workers: 8
+dataloader_num_workers: 0
+
+### output
+output_dir: outputs/checkpoints/qwen35_9b_lora_sft
+logging_steps: 10
+save_steps: 200
+eval_steps: 200
+plot_loss: true
+overwrite_output_dir: false
+save_only_model: false
+report_to: none
+
+### train
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 1.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+gradient_checkpointing: true
+ddp_timeout: 180000000
+resume_from_checkpoint: null
+
+### eval
+eval_strategy: steps

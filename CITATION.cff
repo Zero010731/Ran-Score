@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "Ran Score: a preference-calibrated neural audit framework for finding-level evaluation of radiology report generation"
+message: "If you use this software, please cite the associated paper."
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Ran
+  - family-names: Lin
+    given-names: Yucong
+repository-code: "https://github.com/xiaochoudengming/Ran-Score"
+license: MIT
+version: 1.0.0

@@ -1,0 +1,31 @@
+### model
+model_name_or_path: ${QWEN35_MODEL_PATH}
+adapter_name_or_path: outputs/checkpoints/qwen35_9b_lora_alspc_dpo
+trust_remote_code: true
+quantization_bit: 4
+
+### method
+stage: sft
+do_predict: true
+finetuning_type: lora
+
+### dataset
+dataset_dir: data/llamafactory_ranaudit
+eval_dataset: ranaudit_sft_test
+template: qwen
+cutoff_len: 1024
+max_samples: 100000
+overwrite_cache: true
+preprocessing_num_workers: 8
+
+### output
+output_dir: outputs/predictions/qwen35_9b_lora_alspc_dpo_test
+overwrite_output_dir: true
+report_to: none
+
+### eval
+per_device_eval_batch_size: 1
+predict_with_generate: true
+max_new_tokens: 128
+do_sample: false
+bf16: true

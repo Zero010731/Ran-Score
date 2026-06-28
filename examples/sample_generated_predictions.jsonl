@@ -1,0 +1,1 @@
+{"prompt":"Report: No focal consolidation. Finding: Pneumothorax. Candidate label: negative","predict":"{\"correctness\":\"correct\",\"error_type\":\"none\",\"rationale\":\"The report does not support pneumothorax, so the negative label is correct.\"}","label":"{\"correctness\":\"correct\",\"error_type\":\"none\",\"rationale\":\"The report supports the assigned label.\"}"}

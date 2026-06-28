@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Local data and outputs
+data/
+outputs/
+logs/
+*.log
+*.db
+
+# Model weights and checkpoints
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+checkpoint-*/
+
+# Large/raw tabular files
+*.xlsx
+*.xls
+*.parquet
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

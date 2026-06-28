@@ -1,0 +1,3 @@
+study_id,Atelectasis,Cardiomegaly,Consolidation,Edema,Enlarged Cardiomediastinum,Fracture,Lung Lesion,No Finding,Pleural Effusion,Pleural Other,Lung Opacity,Pneumonia,Pneumothorax,Support Devices,emphysema,interstitial lung disease,calcification(lung and mediastinal),Trachea and bronchus,cavity and cyst,mediastinal other,pulmonary vascular abnormal
+example_001,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+example_002,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0

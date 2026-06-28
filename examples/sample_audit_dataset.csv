@@ -1,0 +1,7 @@
+sample_id,study_id,split,report,finding_category,finding_definition,assigned_label_text,reference_label,audit_label,corruption_type
+toy_train_001,toy_study_001,train,"No focal consolidation, pleural effusion, or pneumothorax. Heart size is normal.",Pneumothorax,"Air in the pleural space.",negative,0,1,none
+toy_train_002,toy_study_002,train,"Mild cardiomegaly with small left pleural effusion. No pneumothorax.",Cardiomegaly,"Enlarged cardiac silhouette or heart size.",negative,1,0,positive_to_negative
+toy_train_003,toy_study_003,train,"Clear lungs without pleural effusion or pneumothorax.",Pleural Effusion,"Fluid in the pleural space.",positive,0,0,negative_to_positive
+toy_val_001,toy_study_004,val,"Bibasilar atelectatic opacity is present. No pleural effusion.",Atelectasis,"Partial collapse or volume loss of lung tissue.",positive,1,1,none
+toy_val_002,toy_study_005,val,"No edema or focal airspace opacity. Cardiomediastinal silhouette is unchanged.",Edema,"Pulmonary vascular congestion or pulmonary edema.",positive,0,0,negative_to_positive
+toy_test_001,toy_study_006,test,"Small right pneumothorax is noted after line placement.",Pneumothorax,"Air in the pleural space.",negative,1,0,positive_to_negative
