@@ -1,7 +1,5 @@
 # Ran Score
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18489808.svg)](https://doi.org/10.5281/zenodo.18489808)
-
 Ran Score is a finding-level evaluation and neural audit framework for radiology report generation. The repository contains code for:
 
 1. Qwen3-14B-based 21-label finding extraction and Ran Score computation.
@@ -115,6 +113,8 @@ python scripts/train_hf_audit_classifier.py   --model-name-or-path /path/to/mode
 ## Data availability and restrictions
 
 Raw MIMIC-CXR reports/images and local hospital reports are not redistributed here. Publicly shareable derived annotations and metadata should be downloaded from the accompanying data release, subject to the dataset licenses and data-use agreements described in `docs/data_release.md`.
+
+The archival DOI for this repository and the accompanying shareable data release should be added after the final Zenodo record is available.
 
 ## Citation
 
