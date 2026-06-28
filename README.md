@@ -1,5 +1,7 @@
 # Ran Score
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18489808.svg)](https://doi.org/10.5281/zenodo.18489808)
+
 Ran Score is a finding-level evaluation and neural audit framework for radiology report generation. The repository contains code for:
 
 1. Qwen3-14B-based 21-label finding extraction and Ran Score computation.
@@ -8,9 +10,22 @@ Ran Score is a finding-level evaluation and neural audit framework for radiology
 
 This repository intentionally excludes raw radiology reports, MIMIC-CXR images, local hospital data, model checkpoints, and generated training outputs.
 
+## Framework
+
+![Overall Ran Score and ALSPC-DPO workflow](assets/ran_score_framework.png)
+
+Fig. 1. Overall workflow of the Ran Score and ALSPC-DPO neural audit framework.
+
+![ALSPC-DPO structured audit calibration](assets/alspc_dpo_calibration.png)
+
+Fig. 2. Structured label-audit module with Adaptive Linguistic-Signal Preference Calibration DPO (ALSPC-DPO).
+
 ## Repository structure
 
 ```text
+assets/
+  ran_score_framework.png
+  alspc_dpo_calibration.png
 scripts/
   run_qwen_extractor.py          # Qwen3-14B finding extraction
   evaluate_ranscore_csv.py       # macro/micro finding-level metrics
